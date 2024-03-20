@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tantofaz.MortePage"
+             Title="Morte Page">
+
+    <ScrollView>
+        <Grid>
+            <Image Source="died.png" 
+                   Aspect="AspectFill"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand" />
+
+            <StackLayout Grid.Row="1" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                <Label Text="Você encontrou um destino trágico!"
+                       FontSize="20"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       Margin="20" />
+
+                <Button Text="Recomeçar"
+                        Clicked="OnRecomecarClicked"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        Margin="20" />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

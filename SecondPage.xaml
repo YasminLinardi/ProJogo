@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tantofaz.SecondPage"
+             Title="Second Page">
+
+    <ScrollView>
+        <Grid>
+            <Image Source="pageum.png" 
+                   Aspect="AspectFill"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand" />
+
+            <StackLayout Grid.Row="1" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                <Label Text="Em um mundo onde a ciência e a magia se entrelaçam, uma equipe de renomados cientistas e magos trabalhava arduamente em uma invenção há muito sonhada: a Máquina do Tempo. Liderados pelo brilhante Dr. Alexander Tannenbaum, um físico quântico, e pela poderosa feiticeira Selena Fireheart, a equipe finalmente alcançou o sucesso. A Máquina do Tempo estava pronta."
+                       FontSize="20"
+                       TextColor="Yellow"
+                       HorizontalOptions="Center"
+                       Margin="20" />
+
+                <Button Text="Estou com medo, não vou negar"
+                        Clicked="OnResposta1Clicked"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        Margin="20" />
+                
+                <Button Text="Vou liderar muito bem a nossa equipe, contem comigo!"
+                        Clicked="OnResposta2Clicked"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        Margin="20" />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
